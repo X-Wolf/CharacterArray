@@ -10,12 +10,10 @@ package characterarray;
  * @author Xuaco
  */
 public class CharacterArray {
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        char[] chars = "6901 Sudley road Manassas VA".toCharArray();
+        System.out.println("The original array is " + String.valueOf(char[]));
     }
     
 }
