@@ -18,15 +18,15 @@ public class CharacterArray {
         
         for (int i = 0; i < chars.length; i++){
 
-            //System.out.print((Character)chars[i] + " ");
+            System.out.print((Character)chars[i] + " ");
             if(Character.isUpperCase(chars[i])){
-                //System.out.print(Character.toLowerCase(chars[i]) + "\n");
+                System.out.print(Character.toLowerCase(chars[i]) + " Letter \n");
                 chars2[i] = (Character.toLowerCase(chars[i]));
             } else if(Character.isDigit(chars[i])){
-                //System.out.print("*" +"\n");
+                System.out.print("* Digit" +"\n");
                 chars2[i] = '*';
             } else {
-               // System.out.print(Character.toUpperCase(chars[i]) + "\n");
+                System.out.print(Character.toUpperCase(chars[i]) + " Letter \n");
                 chars2[i] = (Character.toUpperCase(chars[i]));
             }
 
