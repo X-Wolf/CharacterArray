@@ -12,8 +12,27 @@ package characterarray;
 public class CharacterArray {
     
     public static void main(String[] args) {
-        char[] chars = "6901 Sudley road Manassas VA".toCharArray();
+        char[] chars = "6901 Sudley Road Manassas VA".toCharArray();
+        char[] chars2 = new char[chars.length];
         System.out.println("The original array is " + String.valueOf(chars));
+        
+        for (int i = 0; i < chars.length; i++){
+
+            //System.out.print((Character)chars[i] + " ");
+            if(Character.isUpperCase(chars[i])){
+                //System.out.print(Character.toLowerCase(chars[i]) + "\n");
+                chars2[i] = (Character.toLowerCase(chars[i]));
+            } else if(Character.isDigit(chars[i])){
+                //System.out.print("*" +"\n");
+                chars2[i] = '*';
+            } else {
+               // System.out.print(Character.toUpperCase(chars[i]) + "\n");
+                chars2[i] = (Character.toUpperCase(chars[i]));
+            }
+
+            
+        }
+        System.out.println("The new array is " + String.valueOf(chars2));
     }
     
 }
